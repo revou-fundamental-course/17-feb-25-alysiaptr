@@ -148,7 +148,6 @@ aside {
         text-align: center;
         padding: 50px 20px;
         height: auto; /* Ubah dari 300px ke auto supaya menyesuaikan konten */
-        display: flex;
         flex-direction: column; /* Ubah ke column agar kontennya tersusun ke bawah */
         align-items: center; /* Pusatkan elemen */
         gap: 20px; /* Beri jarak antar elemen */
