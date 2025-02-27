@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nature’s Sip</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css\style.css">
@@ -19,43 +19,74 @@
         <nav>
             <a href="#" class="no-border-radius-right">Home</a>
             <a href="#our-package-section" class="no-border-radius">Our Packages</a>
-            <a href="#" class="no-border-radius-left">Call Us</a>
+            <a href="#call-us-section" class="no-border-radius-left">Call Us</a>
         </nav>
     </header>
-
-    <hr>
 
     <!-- Main Content -->
     <main>
         <header>
-            <h1>Your Trusted Travel Agent's</h1>
-
-            <h4>Your Happiness is Our Happiness</h4>
+            <h1>Freshness in Every Sip!</h1>
+            <h4>Delicious Drinks, Make Your Day More Enjoyable!</h4>
         </header>
 
         <section class="main-content">
             <!-- Banner AutoSlide -->
-            <aside class="main-container">
-                <p>Banner AutoSlide</p>
+            <aside class="main-banner-container">
+                <div class="main-banner banner-img-1"></div>
+                <div class="main-banner banner-img-2"></div>
+                <div class="main-banner banner-img-3"></div>
             </aside>
+        </section>
 
-        <!-- Fomr Contact Us -->
-            <aside class="main-container">
-                <p>Form Contact Us</p>
-            </aside>
-        </section> 
-        
         <!-- Our Packages Section -->
         <section id="our-package-section">
             <header>
                 <h2>Our Packages</h2>
             </header>
-        </section>
 
         <!-- Content Our Packages-->
         <article class="our-package-content">
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing .....</p>
+            <div class="package">
+                <img src="https://i.pinimg.com/736x/38/a2/4a/38a24aedf9bb4cb696db173b937ae741.jpg" alt="Bunga Telang">
+                <h3>Bunga Telang</h3>
+                <hr>
+                <p>Butterfly pea tea is a tea made from brewed butterfly pea flowers (Clitoria ternatea).</p>
+            </div>
+            <div class="package">
+                <img src="https://i.pinimg.com/736x/f1/02/89/f10289ebf1f563d422f2e7fd4a74f1a6.jpg" alt="Taro Bubble Tea">
+                <h3>Taro Bubble Tea</h3>
+                <hr>
+                <p>Taro bubble tea or taro boba is a milk tea drink with purple boba.</p>
+            </div>
+            <div class="package">
+                <img src="https://i.pinimg.com/736x/e0/b9/d4/e0b9d4c3c18e2a05e02756102802b3a5.jpg" alt="Smoothie Blueberry">
+                <h3>Smoothie Blueberry</h3>
+                <hr>
+                <p>Blueberries contain many nutrients, such as Vitamin C, folate, and fiber.</p>
+            </div>
         </article>
+        <article class="our-package-content">
+            <div class="package">
+                <img src="https://www.monicanedeff.com/wp-content/uploads/2024/04/lavender-lemonade-1.jpg" alt="Lavender Lemonade">
+                <h3>Lavender Lemonade</h3>
+                <hr>
+                <p>Lavender lemonade is a refreshing drink with lemon and lavender flavors.</p>
+            </div>
+            <div class="package">
+                <img src="https://asset.kompas.com/crops/xFl1QuEFuu9IW0OPhJdtCmYBJF4=/0x2149:4480x5136/750x500/data/photo/2021/12/24/61c5c530ea869.jpg" alt="Mocktail">
+                <h3>Mocktail</h3>
+                <hr>
+                <p>Mocktails are made by mixing fruit juice, syrup, soda, milk and other ingredients.</p>
+            </div>
+            <div class="package">
+                <img src="https://www.dreamers.id/img_artikel/9galaxy-slush.jpg" alt="Galaxy">
+                <h3>Galaxy</h3>
+                <hr>
+                <p>Galaxy is a drink consisting of several herbal teas and soda, girls.</p>
+            </div>
+        </article>
+    </section>
 
         <!-- Call Us Section -->
         <section id="call-us-section">
@@ -66,14 +97,44 @@
 
         <!-- Content Call Us Packages-->
         <article class="call-us-content">
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing .....</p>
-        </article>
+            <p>Refresh your day with the best drinks<br>
+                Enjoy a wide selection of fresh drinks made from high quality ingredients. Order now and feel the freshness in every sip!
+            </p>
+        
+            <form id="message-form" name="message-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="full-name">Nama:</label>
+                    <input id="full-name" placeholder="Nama Lengkap" type="text" name="full-name" required>
+                    <span id="error-name" class="error-message"></span>
+                </div>                    
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="Email Address" type="email" name="email" required>
+                    <span id="error-email" class="error-message"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" placeholder="Pesan" name="message" required></textarea>
+                    <span id="error-message" class="error-message"></span>
+                    </div>
+            
+                    <button type="submit">Kirim</button>
+                </form>
+            </article>
+        </section>
+        <hr>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>Made by Alysia Putri</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -10,11 +10,13 @@ body {
 }
 
 .logo-company {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     background-image: url(https://i.pinimg.com/736x/11/94/53/11945384587477368dd2464897c4f9bc.jpg);
     background-size: cover;
     border-radius: 50%;
+    background-position: center;
+
 }
 
 nav {
@@ -52,16 +54,48 @@ main>header {
 }
 
 .main-content {
-    display: flex;
-    gap: 24px;
+    margin: 10px;
 }
 
 .main-container {
     border: 1px solid;
-    height: 400px;
+    height: 500px;
     flex: 1;
     align-content: center;
     text-align: center;
+    margin: 10px;
+}
+
+.main-banner-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+} 
+
+aside {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.banner-img-1 {
+    background-image: url(https://img.lovepik.com/background/20211022/medium/lovepik-ice-cubes-background-image_401930883.jpg);
+}
+
+.banner-img-2 {
+    background-image: url(https://watermark.lovepik.com/photo/40015/8670.jpg_wh1200.jpg);
+}
+
+.banner-img-3 {
+    background-image: url(https://img.lovepik.com/background/20211022/medium/lovepik-summer-drink-background-image_401940452.jpg);
 }
 
 #our-package-section>header {
@@ -69,13 +103,36 @@ main>header {
     align-content: center;
     text-align: center;
     background-color: plum;
+    margin: 10px;
 }
 
 .our-package-content {
-    border: 1px solid;
     height: 300px;
     align-content: center;
     text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+
+.package {
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 30%;
+
+}
+
+.package img {
+    height: 100px;
+    width: 100px;
+}
+
+.package-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 #call-us-section>header {
@@ -83,15 +140,115 @@ main>header {
     align-content: center;
     text-align: center;
     background-color: plum;
+    margin: 10px;
 }
 
 .call-us-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
+        margin: 10px;
+        text-align: center;
+        padding: 50px 20px;
+        height: auto; /* Ubah dari 300px ke auto supaya menyesuaikan konten */
+        display: flex;
+        flex-direction: column; /* Ubah ke column agar kontennya tersusun ke bawah */
+        align-items: center; /* Pusatkan elemen */
+        gap: 20px; /* Beri jarak antar elemen */
 }
 
-footer {
+
+.call-us-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+
+#message-form label {
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+#message-form input,
+#message-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#message-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#message-form button {
+    background-color: #d63484;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) 
+{
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-company {
+        width: 10%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0;
+    }
+}
+
+footer{
     text-align: center;
 }
